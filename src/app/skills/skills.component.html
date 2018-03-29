@@ -1,0 +1,17 @@
+<div class="skills quicksand">
+    <div class="wrapper">
+        <div class="title">
+            <h2 class="regular" matTooltip="Tooltip!">{{Title}}</h2>
+            <hr/>
+        </div>
+        <div class="row skills-sliders">
+            <div *ngFor="let skill of skills" class="skill col-sm-4">
+
+                <div class="logo-container">
+                    <img class="logo" src="{{skill.image}}">
+                </div>
+                <app-range-slider [name]="skill.name" [image]="skill.image" [value]="skill.value" [color]="skill.color"></app-range-slider>
+            </div>
+        </div>
+    </div>
+</div>

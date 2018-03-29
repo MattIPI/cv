@@ -1,0 +1,36 @@
+mat-tab-group{
+    width: 100%;
+}
+.demo-tab-group {
+    border: 1px solid #e8e8e8;
+}
+
+.demo-tab-content {
+    padding: 16px;
+}
+.mat-ripple-element{
+    /*display: none;*/
+}
+.mat-tab-list {
+    /*border-bottom: 1px solid #e8e9e8;*/
+}
+.mat-tab-label{
+    /*border: 1px solid #000;*/
+}
+.mat-tab-label-active{
+    /*background-color: #a035c3;*/
+    /*color: #e8e8e8;*/
+}
+.mat-tab-label .label-container p{
+    margin-bottom: 0;
+}
+.mat-tab-label .label-container .time{
+    font-size: 12px;
+}
+mat-card{
+    cursor: pointer;
+    height:100%;
+}
+.card-container{
+    margin-bottom: 25px;
+}

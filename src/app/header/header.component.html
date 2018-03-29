@@ -1,0 +1,48 @@
+<script src="header.component.ts"></script>
+<div #header class="header row quicksand">
+    <div class="name-wrapper col-md-4 col-sm-12">
+        <div class="content-container font-xxl regular">
+            <p>BEAUVIN<br>Matthieu</p>
+        </div>
+    </div>
+    <div class="credential-wrapper col-md-4 col-sm-6">
+        <div class="content-container font-m medium">
+            <p>Né le 27 mars 1996</p>
+            <p>{{credentials.address.street}}<br/>{{credentials.address.zip}} {{credentials.address.city}}</p>
+        </div>
+    </div>
+
+    <div class="credential-wrapper col-md-4 col-sm-6">
+        <div class="content-container font-m medium">
+            <p>{{credentials.driver}}</p>
+            <p><a href="mailto:{{credentials.mail}}">{{credentials.mail}}</a><br/><a href="tel:{{credentials.phone}}">{{credentials.phone}}</a></p>
+        </div>
+    </div>
+
+    <div class="position col-md-12 font-xl italic text-center light">
+        <p>{{credentials.position}}</p>
+    </div>
+
+    <p (click)="toggleLang('fr')">Francais</p>
+    <p (click)="toggleLang('en')">English</p>
+
+</div>
+<div #sticky_header class="header sticky-header quicksand">
+    <div class="wrapper">
+        <div class="row">
+            <div class="name-wrapper col-md-3 col-sm-3">
+                <div class="content-container font-l regular">
+                    <p>BEAUVIN Matthieu</p>
+                </div>
+            </div>
+            <div class="position col-md-6 col-sm-6 font-l italic text-center light">
+                <p>{{credentials.position}}</p>
+            </div>
+            <div class="col-md-3 col-sm-3 social">
+                <a href="http://www.linkedin.com/in/matthieu-beauvin" target="_blank">
+                    <img class="linkedin" src="../../assets/images/linkedin-white.png" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

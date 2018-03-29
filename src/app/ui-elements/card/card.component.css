@@ -1,0 +1,38 @@
+.cdk-overlay-pane{
+    max-height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    min-width: 480px;
+}
+.mat-list-item:hover{
+    background-color: #e8e8e8;
+}
+.mat-list{
+    margin-bottom: 25px;
+}
+.cdk-overlay-pane::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+.cdk-overlay-pane::-webkit-scrollbar
+{
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+.cdk-overlay-pane::-webkit-scrollbar-thumb
+{
+    background-color: #a2a2a2;
+}
+button:focus {
+    outline: 0px auto -webkit-focus-ring-color;
+}
+
+@media screen and (max-width: 768px){
+    .cdk-overlay-pane{
+        min-width: 0;
+        width: 90%!important;
+    }
+}

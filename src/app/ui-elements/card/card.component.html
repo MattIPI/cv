@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>{{myData.title}}</h1>
+<div mat-dialog-content >
+  <p>{{myData.text}}</p>
+  <ul>
+    <li *ngFor="let feature of myData.features">
+      {{feature}}
+    </li>
+  </ul>
+  <mat-list role="list">
+    <mat-list-item role="listitem" *ngFor="let techno of myData.technologies">{{techno}}</mat-list-item>
+  </mat-list>
+</div>
+<div mat-dialog-actions>
+  <button class="mat-button" mat-raised-button mat-button (click)="onNoClick()" >Fermer</button>
+</div>

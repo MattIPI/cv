@@ -1,0 +1,53 @@
+.education-item-container{
+    position: absolute;
+    bottom: -5px;
+    width: 80%;
+    text-align: center;
+    left: 10%;
+}
+.year{
+    margin-bottom: 0;
+    font-size: 30px;
+    margin-top: 10px;
+    line-height: 20px;
+    color: #989898;
+}
+.pin{
+    position: absolute;
+    display: block;
+    left: calc(50% - 12px);
+    z-index:0;
+}
+.pin::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    border: 8px solid #c3c6cc;
+    background-color: #6258ac;
+    border-radius: 16px;
+    box-sizing: content-box;
+    position: absolute;
+    display: block;
+    top: -7px;
+    z-index: 10;
+    cursor: pointer;
+}
+.pin::before{
+    content: '';
+    display: block;
+    border-radius: 17px;
+    width: 34px;
+    height: 34px;
+    background: #fff;
+    position: absolute;
+    top: -12px;
+    left: -5px;
+    z-index: 1;
+    transition: all ease-out 200ms;
+}
+.pin:hover::before{
+    top:0;
+    left:5px;
+    width: 10px;
+    height: 10px;
+}

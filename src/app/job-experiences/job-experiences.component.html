@@ -1,0 +1,142 @@
+<!--<link rel="stylesheet" href="job-experiences.component.css">-->
+<script src="job-experiences.component.ts"></script>
+<div class="education quicksand">
+    <div class="wrapper">
+        <div class="title">
+            <h2 class="regular">Expériences Professionnelles</h2>
+            <hr/>
+        </div>
+        <div class="row">
+            <div class=" col-sm-12">
+                <mat-tab-group selectedIndex="2" class="demo-tab-group">
+                    <mat-tab>
+
+                        <ng-template mat-tab-label>
+                            <div class="label-container">
+                                <p>Stage Studio Darman</p>
+                                <p class="time">2 mois - 2015</p>
+                            </div>
+                        </ng-template>
+                        <div class="demo-tab-content">
+                            <div class="theme">
+                                <h4>Prestations</h4>
+                                <p>
+                                    Intégration de sites web
+                                </p>
+                            </div>
+                            <div class="row">
+                                <h4 class="col-sm-12">Les projets</h4>
+                                <div class="col-sm-12">
+                                    <div class="theme row row-eq-height" >
+                                        <div class="col-sm-6 card-container" *ngFor="let experience of DarmanInternship">
+                                            <mat-card (click)="openDialog(experience)">
+                                                <b>{{experience.title}}</b>
+                                                <p>
+                                                    {{experience.text}}
+                                                </p>
+                                            </mat-card>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab>
+                        <ng-template mat-tab-label>
+                            <div class="label-container">
+                                <p>Stage Digeek</p>
+                                <p class="time">2 mois - 2015</p>
+                            </div>
+                        </ng-template>
+                        <div class="demo-tab-content">
+                            <div class="theme">
+                                <h4>Prestations</h4>
+                                <p>
+                                    Développement
+
+                                </p>
+                                <ul>
+                                    <li>
+                                        Site web
+                                    </li>
+                                    <li>
+                                        Application mobile intra entreprise
+                                    </li>
+                                </ul>
+                                <p>Campagne emailing</p>
+                            </div>
+                            <div class="row">
+                                <h4 class="col-sm-12">Les projets</h4>
+                                <div class="col-sm-12">
+                                    <div class="theme row row-eq-height" >
+                                        <div class="col-sm-6 card-container" *ngFor="let experience of DigeekInternship">
+                                            <mat-card (click)="openDialog(experience)">
+                                                <b>{{experience.title}}</b>
+                                                <p>
+                                                    {{experience.text}}
+                                                </p>
+                                            </mat-card>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab>
+
+                        <ng-template mat-tab-label>
+                            <div class="label-container">
+                                <p>Alternance Digeek</p>
+                                <p class="time">Septembre 2015 - Aujourd'hui</p>
+                            </div>
+                        </ng-template>
+                        <div class="demo-tab-content">
+
+                            <div class=" row no-gutters">
+                                <div class="col-sm-5">
+                                    <div class="theme">
+                                        <h4>Prestations</h4>
+                                        <p>
+                                            Développement
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                Application mobile grand public
+                                            </li>
+                                            <li>
+                                                Sites & outils web
+                                            </li>
+                                        </ul>
+                                        <p>Référencement web</p>
+                                        <p>Gestion de projets</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row custom-scrollbar">
+                                <h4 class="col-sm-12">Quelques projets</h4>
+                                <div class="col-sm-12">
+                                    <div class="theme row row-eq-height" >
+                                         <div class="col-sm-6 card-container" *ngFor="let experience of master_experiences">
+                                            <mat-card (click)="openDialog(experience)">
+                                                <b>{{experience.title}}</b>
+                                                <p>
+                                                    {{experience.text}}
+                                                </p>
+                                            </mat-card>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-center col-sm-12"><b>Et bien d'autres !</b></p>
+                            </div>
+                        </div>
+                    </mat-tab>
+                </mat-tab-group>
+            </div>
+        </div>
+        <div class="row formation-line">
+            <div class="col-md-12">
+            </div>
+        </div>
+    </div>
+</div>

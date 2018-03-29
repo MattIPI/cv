@@ -1,0 +1,16 @@
+<div class="education quicksand">
+  <div class="wrapper">
+    <div class="title">
+      <h2 class="regular">{{Title}}</h2>
+      <hr/>
+    </div>
+    <div class="row formation-line">
+      <div class="col-sm-12">
+        <app-education-item *ngFor="let item of educationItems[lang]"
+                            [title]="item.title" [speciality]="item.speciality" [year]="item.year" [school]="item.school">
+        </app-education-item>
+        <div (click)="timelineClick($event)" class="timeline animation"></div>
+      </div>
+    </div>
+  </div>
+</div>

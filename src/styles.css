@@ -1,1 +1,102 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+.quicksand{
+    font-family: 'Quicksand', sans-serif;
+}
+.ErasBold{
+    font-family: 'Eras bold', sans-serif;
+}
+@font-face {
+    font-family: "Eras bold";
+    src: url("assets/fonts/ErasBoldITC.ttf");
+}
+body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.bold{
+    font-weight: 700;
+}
+.medium{
+    font-weight: 500;
+}
+.regular{
+    font-weight: 400;
+}
+.light{
+    font-weight: 300;
+}
+.font-xs{
+    font-size: 12px;
+}
+.font-s{
+    font-size: 14px;
+}
+.font-m{
+    font-size: 18px;
+}
+.font-l{
+    font-size: 20px;
+}
+.font-xl{
+    font-size: 28px;
+}
+.font-xxl{
+    font-size: 40px;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.italic{
+    font-style: italic;
+}
+
+.wrapper{
+    max-width: 1080px;
+    display: block;
+    position: relative;
+    margin: 20px auto;
+}
+
+.no-overflow{
+    overflow: hidden;
+}
+
+.title{
+    text-align: center;
+    color: #7267a4;
+    margin-bottom: 50px;
+    margin-top: 75px;
+}
+.title h2{
+    display: inline-block;
+    width: auto;
+    background: #fff;
+    padding: 0 30px;
+}
+.title hr{
+    border-top: 2px solid #a035c3;
+    margin-top: -27px;
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.block{
+    display: block;
+    position: relative;
+}
