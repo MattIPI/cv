@@ -14,25 +14,25 @@ export class EducationComponent implements OnInit {
           {
               title:"High School diploma STI2D",
               speciality: "Digital and Information System",
-              school: "High School PP.Riquet",
+              school: "P.P.Riquet High School (Toulouse - FR)",
               year: 2013
           },
           {
               title:"BTS SIO",
-              speciality: "Solutions Logicielles et Applications Métier",
-              school: "Lycée PP.Riquet",
+              speciality: "Software Solutions and Business Applications",
+              school: "Ozenne High School (Toulouse - FR)",
               year:2015
           },
           {
-              title:"Diplôme BAC +3",
-              speciality: "Licence Concepteur Développeur",
-              school: "Ecole IPI (Groupe IGS)",
+              title:"Professional Licence",
+              speciality: "Software Designer and Developer",
+              school: "IPI School (IGS Group)",
               year:2016
           },
           {
-              title:"Diplôme Bac +5",
-              speciality: "Chef de projet Ingénierie Logicielle",
-              school: "Ecole IPI (Groupe IGS)",
+              title:"Master Degree",
+              speciality: "Project Manager & Software Engineering",
+              school: "IPI School (IGS Group)",
               year:2018
           }
       ],
@@ -46,7 +46,7 @@ export class EducationComponent implements OnInit {
         {
             title:"BTS SIO",
             speciality: "Solutions Logicielles et Applications Métier",
-            school: "Lycée PP.Riquet",
+            school: "Lycée Ozenne",
             year:2015
         },
         {
